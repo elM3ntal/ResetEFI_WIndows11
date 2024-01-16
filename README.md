@@ -17,7 +17,7 @@ Una volta raggiunto il cmd esegui i seguenti comandi:
   + **select disk** dopo select disk scrivere il numero corrispondente all'unità (es: select disk 0)
   + **list partition** per visualizzare le partizioni del disco selezionato. Qui si può notare se effettivamente la partizione EFI manca oppure no. In caso ci fosse, non proseguire con il tutorial in quanto non risolverà il tuo problema.
   + **select partition** dopo select partition scrivere il numero corrispondente alla partizione da ridurre (es select partition 0)
-  ![diskpart](Images/diskpart.png)
+  ![diskpart](Images/diskpart1.png)
   + **shrink desired=100** preleva da quella partizione 100MB da utilizzare per la partizione EFI
   + **create partition efi size=100** per creare effettivamente la partizione nei 100MB liberati in precedenza
   + **format quick fs=fat32** per formattarla nel formato corretto
